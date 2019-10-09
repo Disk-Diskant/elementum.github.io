@@ -1,0 +1,732 @@
+:root{
+    --mainColor: rgba(222, 242, 229, 1);
+
+    --headingColor: rgba(111, 111, 111, 0.6);
+
+    --coverColor: rgba(111, 111, 111, 0.6);
+
+    --glassColor: rgba(255, 255, 255, 0);
+
+
+    --glassShadow: 0px 0px 20px 0px rgba(129, 129, 129, 0.44);
+
+    --planeShadow: 1px 2px 2px rgba(0, 0, 0, 0.22);
+
+
+    --textColor: rgba(111, 111, 111, 0.9);
+
+    --textColorAlt: rgba(255, 255, 255, 1);
+
+    --textShadow: 1px 2px 0px rgba(255, 255, 255, 0.22);
+
+
+    --formStatus: flex;
+
+    --bageStatus: none;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--textColor);
+    background: url(img/bg.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3{
+    margin: 0;
+    font-style: normal;
+}
+
+.page{
+    overflow: hidden;
+    background: #fff0;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Section 1 Home ====================*/
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 15vh;
+    background-color: var(--glassColor);
+    border-radius: 0px 0px 0px 15px;
+    box-shadow: var(--glassShadow);
+}
+
+.frame{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background-color: var(--glassColor);
+    box-shadow: var(--glassShadow);
+}
+
+.holder{
+    position: relative;
+    top: -10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    height: 140%;
+    border-radius: 15px;
+    background-color: var(--mainColor);
+    box-shadow: var(--planeShadow);
+}
+
+.cover{
+    display: none;
+    opacity: 0.1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background: Url(img/a1.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.7);
+}
+
+.logo{
+    opacity: 1;
+    position: absolute;
+    height: 100%;
+    margin-left: 10px;
+    z-index: 999;
+}
+
+.mainTitle{
+    text-align: center;
+    font-size: 3em;
+    color: var(--headingColor);
+    padding: 0 20px;
+    text-shadow: var(--textShadow);
+    z-index: 999;
+}
+
+.mainSubtitle{
+    text-align: center;
+    font-size: 2em;
+    color: var(--headingColor);
+    padding: 0 20px;
+    text-shadow: var(--textShadow);
+    z-index: 999;
+}
+
+.companyName{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--textColorAlt);
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 20px;
+    line-height: 1.5em;
+    z-index: 999;
+}
+
+.namecover{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 15px;
+    right: 0px;
+    width: 60%;
+    border-radius: 20px 0 0 20px;
+    background-color: var(--coverColor);
+}
+
+/*Section 2 About ====================*/
+
+.section2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.frameMiddle{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    background-color: var(--glassColor);
+    box-shadow: var(--glassShadow);
+}
+
+.frameMiddle--2{
+    top: 30px;
+}
+
+.holderMiddle{
+    position: relative;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    padding-top: 21px;
+    border-radius: 15px;
+    background-color: var(--mainColor);
+    box-shadow: var(--planeShadow);
+}
+
+.holderMiddle--2{
+    top: 0px;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+
+.title{
+    text-align: center;
+    font-size: 2em;
+    color: var(--headingColor);
+    text-shadow: var(--textShadow);
+}
+
+.infoblock{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    max-width: 98%;
+    margin: 0px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    background-color: rgba(111, 111, 111, 0);
+}
+
+.infoHolder{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.infoHolder--2{
+    padding-right: 10px;
+}
+
+.infoHolder--3{
+    padding-left: 10px;
+}
+
+.aboutImg{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.aboutParagraph{
+    margin: 0;
+    padding: 5px 0px 5px 20px;
+    text-shadow: var(--textShadow);
+}
+
+/*Section 3 Advantages ====================*/
+
+.section3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.frameMiddle--3{
+    top: 50px;
+}
+
+.holder3{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 15px;
+    background-color: var(--mainColor);
+    box-shadow: var(--planeShadow);
+}
+
+.infoframe{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    background-color: var(--coverColor);
+    box-shadow: var(--textShadow);
+}
+
+.infoframe--first{
+    margin-top: 20px;
+}
+
+.infoframe--last{
+    margin-bottom: 20px;
+}
+
+.info{
+    width: 900px;
+    max-width: 100%;
+}
+
+.pWhite{
+    text-align: center;
+    color: var(--textColorAlt);
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.infoframeT{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(111, 111, 111, 0);
+    margin: 10px 0;
+}
+
+.infoframeT--first{
+    margin-top: 20px;
+}
+
+.infoframeT--last{
+    margin-bottom: 50px;
+}
+
+.pBlack{
+    text-align: center;
+    margin: 0;
+    padding: 5px 20px;
+    text-shadow: var(--textShadow);
+}
+
+/*Section 4 Pricing ====================*/
+
+.section4{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricingCover{
+    position: relative;
+    left: 0px;
+    top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    height: 15vh;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    background-color: var(--glassColor);
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: var(--glassShadow);
+}
+
+.pricingHolder{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    bottom: 15px;
+    left: 0px;
+    width: 60%;
+    border-radius: 0 20px 20px 0;
+    background-color: var(--coverColor);
+}
+
+.pricingHeader{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--textColorAlt);
+    margin-right: auto;
+    margin-top: auto;
+    margin-left: 20px;
+    line-height: 1.5em;
+    z-index: 999;
+}
+
+.coverdiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.priceFrame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    background-color: var(--glassColor);
+    box-shadow: var(--glassShadow);
+
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 15px auto;
+    padding: 10px;
+    background-color: var(--mainColor);
+    border-radius: 15px;
+    box-shadow: var(--planeShadow);
+}
+
+.font{
+    font-size: 1.3em;
+    opacity: 1;
+}
+
+.title--Price{
+    font-size: 1.5em;
+}
+
+
+.title--contact{
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.contact{
+    position: relative;
+    left: -5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 110%;
+/*    min-height: 200px;*/
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: var(--mainColor);
+    box-shadow: var(--planeShadow);
+}
+
+.contactInfo{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.contactUs{
+    display: var(--bageStatus);
+    justify-content: center;
+    min-width: 250px;
+    width: 50%;
+    margin: 70px auto 0px;
+    padding: 5px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: var(--planeShadow);
+    transition: .1s ease-in-out;
+}
+
+/*Form====================*/
+
+.form_parent{
+    max-width: 400px;
+    width: 95%;
+    display: var(--formStatus);
+    flex-direction: column;
+    margin: 20px auto 8px;
+}
+
+.button{
+    font-family: inherit;
+    font-size: 1.5em;
+    border: 0;
+    font-weight: 700;
+    color: rgba(111, 111, 111, 0.6);
+    background: rgba(255, 255, 255, 1);
+    padding: 8px 55px;
+    border-radius: 20px;
+    margin: 35px 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(96,101,123,.2);
+    margin-left: auto;
+    margin-right: auto;
+    transition: .1s ease;
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: scale(1.02);
+}
+
+
+input{
+    color: rgba(111, 111, 111, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border: 0;
+    padding: 6px;
+    padding-left: 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(96,101,123,.2);
+    outline: none;
+    transition: .2s ease;
+}
+
+input:focus{
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+input[type="submit"]:active{
+    transform: scale(0.99);
+
+}
+
+::-webkit-input-placeholder {
+    color:rgba(70, 70, 70, 0.4);
+}
+
+.message_success{
+    display: none;
+    border-radius: 20px;
+    margin: 5px 0;
+    padding: 8px;
+    box-shadow: 1px 2px 2px #00000036;
+    background-color:  rgb(222, 242, 229);
+}
+
+.message_error{
+    display: none;
+    border-radius: 20px;
+    margin: 5px 0;
+    padding: 8px;
+    box-shadow: 1px 2px 2px #00000036;
+    background-color: rgba(246, 193, 193, 0.95);
+}
+
+.status_message{
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(111, 111, 111, 0.7);
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+/*Media ====================*/
+
+@media (orientation: portrait) {
+  .header {
+      height: 15vw;
+    }
+    .mainTitle{
+        margin-bottom: 30px;
+    }
+  .pricingCover{
+        height: 15vw;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .holder{
+        width: 90vw;
+    }
+    .holderMiddle{
+        width: 96vw;
+    }
+    .holder3{
+        width: 96vw;
+    }
+    .coverdiv{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .contact{
+        width: 107%;
+        left: -3.5%;
+    }
+}
+
+
+
+@media (max-width: 630px) {
+    .header {
+      height: 90px;
+    }
+    .pricingCover{
+        height: 90px;
+    }
+    .companyName{
+        font-size: 30px;
+    }
+    .pricingHeader{
+        font-size: 30px;
+    }
+    .mainTitle{
+        font-size: 2.5em;
+    }
+    .mainSubtitle{
+        font-size: 1.7em;
+    }
+    .infoHolder{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .infoHolder--2 {
+        padding-right: 0px;
+    }
+    .infoHolder--3 {
+        padding-left: 0px;
+    }
+    .pWhite {
+        text-align: left;
+    }
+    .pBlack {
+        text-align: left;
+    }
+    .pWhite--Copy{
+        text-align: center;
+    }
+    .pBlack--plan{
+        text-align: center;
+    }
+    input{
+        margin-top: 15px;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    body{
+        font-size: 14px;
+    }
+    .logo{
+        height: 70%;
+        margin-top: 10px;
+    }
+    .companyName {
+        font-size: 25px;
+    }
+    .pricingHeader {
+        font-size: 25px;
+    }
+    .infoHolder {
+        margin-bottom: 15px;
+    }
+    .infoblock{
+        padding: 10px;
+    }
+    .aboutParagraph{
+        padding-left: 5px;
+    }
+    .infoframeT{
+        margin: 5px 0px;
+    }
+    .infoframeT--first {
+        margin-top: 10px;
+    }
+    .infoframeT--last {
+        margin-bottom: 30px;
+    }
+    .infoframe--first {
+        margin-top: 10px;
+    }
+    .price{
+        width: 95%;
+    }
+    .pBlack{
+        padding: 5px 15px;
+    }
+    .pWhite{
+        padding: 5px 15px;
+    }
+}
+
+
+
+@media (max-height: 500px){
+    .header {
+        height: 55px;
+    }
+    .companyName {
+        font-size: 25px;
+    }
+    .namecover{
+        bottom: 8px;
+    }
+    .infoframeT{
+        margin: 5px 0px;
+    }
+    .infoframeT--first {
+        margin-top: 10px;
+    }
+    .infoframeT--last {
+        margin-bottom: 30px;
+    }
+    .pricingHeader {
+        font-size: 25px;
+    }
+    .pricingHolder {
+        bottom: 8px;
+    }
+    .pricingCover {
+        height: 55px;
+    }
+    input{
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
